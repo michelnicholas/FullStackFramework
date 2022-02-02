@@ -3,6 +3,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
 import java.sql.*;
+import java.util.ArrayList;
 
 public class JsonToJava {
 
@@ -11,7 +12,9 @@ public class JsonToJava {
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection conn = null;
         // Giving Details to CustomerDetails class
-        CustomerDetails c = new CustomerDetails();
+
+        ArrayList<CustomerDetails> a = new ArrayList<CustomerDetails>();
+        // Giving connection to the Driver
         conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Business","root","Imani11234!");
 
         // Object of Statement Class will help us to execute queries
@@ -30,11 +33,15 @@ public class JsonToJava {
         while (rs.next()){
 
 
+            CustomerDetails c = new CustomerDetails();
+            // 3 different json files , 3 different java objects
             // Used set methods to put the information into Customer Details methods
             c.setCourseName(rs.getString(1));
             c.setPurchasedDate(rs.getString(2));
             c.setAmount(rs.getInt(3));
             c.setLocation(rs.getString(4));
+            a.add(c);
+
 
             // Print the information from the Sql Library to console by using Getter Methods
             System.out.println(c.getCourseName());
