@@ -7,6 +7,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
@@ -71,7 +72,11 @@ public class oneSingleJson {
         String string1 = unescapedString.replace("\"{","{");
         String finalString = string1.replace("}\"","}");
         System.out.println(finalString);
-
+        // Constructs a FileWriter given a file name, using the platform's default charset
+        try (
+           FileWriter file = new FileWriter("C:\\Users\\Miche\\IdeaProjects\\FullStackAutomationProject\\JsonJava\\SingleJson.json")){
+                 file.write(finalString);
+           }
 
         conn.close();
     }
