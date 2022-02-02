@@ -10,7 +10,7 @@ public class JsonToJava {
 
         // Object of Statement Class will help us to execute queries
         Statement st = conn.createStatement();
-        ResultSet rs =  st.executeQuery("select * from CustomerInfo where location = 'Asia' and purchasedDate=curdate();");
+        ResultSet rs =  st.executeQuery("select * from CustomerInfo where location = 'Asia' and purchasedDate=curdate() LIMIT 1;");
 //       rs.next();
 //       rs.getString(1);
 //       rs.getString(2);
