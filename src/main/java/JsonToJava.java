@@ -26,6 +26,8 @@ public class JsonToJava {
             CustomerDetails c = new CustomerDetails();
             c.setCourseName(rs.getString(1));
             c.setCourseName(rs.getString(2));
+            c.setAmount(rs.getInt(3));
+            c.setLocation(rs.getString(4));
 
         }
         conn.close();
