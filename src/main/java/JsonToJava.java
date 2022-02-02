@@ -24,10 +24,16 @@ public class JsonToJava {
         while (rs.next()){
             // Giving Details to CustomerDetails class
             CustomerDetails c = new CustomerDetails();
+
+            // Used set methods to put the information into Customer Details methods
             c.setCourseName(rs.getString(1));
-            c.setCourseName(rs.getString(2));
+            c.setPurchasedDate(rs.getString(2));
             c.setAmount(rs.getInt(3));
             c.setLocation(rs.getString(4));
+
+            // Print the information from the Sql Library to console by using Getter Methods
+            System.out.println(c.getCourseName());
+            System.out.println(c.getPurchasedDate());
 
         }
         conn.close();
