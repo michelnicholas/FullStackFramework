@@ -34,7 +34,7 @@ public class JsonToJava {
             // Print the information from the Sql Library to console by using Getter Methods
             System.out.println(c.getCourseName());
             System.out.println(c.getPurchasedDate());
-
+//
         }
         conn.close();
     }
