@@ -22,10 +22,11 @@ public class JsonToJava {
 //       rs.getInt(3);
 //       rs.getString(4);
         while (rs.next()){
-            System.out.println(rs.getString(1));
-            System.out.println(rs.getString(2));
-            System.out.println(rs.getInt(3));
-            System.out.println(rs.getString(4));
+            // Giving Details to CustomerDetails class
+            CustomerDetails c = new CustomerDetails();
+            c.setCourseName(rs.getString(1));
+            c.setCourseName(rs.getString(2));
+
         }
         conn.close();
     }
