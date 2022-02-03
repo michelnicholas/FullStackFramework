@@ -15,7 +15,6 @@ public class JsonToJava {
         Connection conn = null;
         // Giving Details to CustomerDetails class
         ArrayList<CustomerDetails> a = new ArrayList<CustomerDetails>();
-
         // Giving connection to the Driver
         conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Business","root","Imani11234!");
 
