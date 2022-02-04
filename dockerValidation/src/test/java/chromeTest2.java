@@ -4,14 +4,13 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+public class chromeTest2 {
 
-
-public class chromeStandAloneTest {
 
     public static void main(String[] args) throws MalformedURLException {
 
         /*
-        SELENIUM DOCKER INTEGRATION
+        SELENIUM DOCKER HUB INTEGRATION
          */
 
 
@@ -24,7 +23,7 @@ public class chromeStandAloneTest {
         URL u = new URL("http://localhost:4444/wd/hub");
         RemoteWebDriver driver = new RemoteWebDriver(u,cap);
         // Selenium get method to go to url inside docker
-        driver.get("http://google.com");
+        driver.get("http://gmail.com");
         String title = driver.getTitle();
         // Print out Title
         System.out.println(title);

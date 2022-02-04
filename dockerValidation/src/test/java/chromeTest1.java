@@ -4,16 +4,13 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-
-
-public class chromeStandAloneTest {
+public class chromeTest1 {
 
     public static void main(String[] args) throws MalformedURLException {
 
         /*
-        SELENIUM DOCKER INTEGRATION
+        SELENIUM DOCKER HUB INTEGRATION
          */
-
 
         //Desired Capabilites class called to create Object
         DesiredCapabilities cap = new DesiredCapabilities();
@@ -29,7 +26,6 @@ public class chromeStandAloneTest {
         // Print out Title
         System.out.println(title);
         System.out.println("Docker Test Ended");
-
     }
 
 
