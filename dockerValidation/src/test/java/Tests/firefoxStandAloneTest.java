@@ -1,3 +1,5 @@
+package Tests;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -6,7 +8,7 @@ import java.net.URL;
 
 
 
-public class chromeStandAloneTest {
+public class firefoxStandAloneTest {
 
     public static void main(String[] args) throws MalformedURLException {
 
@@ -14,11 +16,10 @@ public class chromeStandAloneTest {
         SELENIUM DOCKER INTEGRATION
          */
 
-
         //Desired Capabilites class called to create Object
         DesiredCapabilities cap = new DesiredCapabilities();
         // set capabilities with cap variable from desired capabilities class to use chrome
-        cap.setCapability("browserName","chrome");
+        cap.setCapability("browserName","firefox");
         // using Url class to create new url object to then use with localhost and mapping with port number
         // in docker to send to Remote WebDriver
         URL u = new URL("http://localhost:4444/wd/hub");
@@ -34,3 +35,4 @@ public class chromeStandAloneTest {
 
 
 }
+
