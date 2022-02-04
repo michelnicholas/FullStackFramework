@@ -15,7 +15,6 @@ public class firefoxStandAloneTest {
         SELENIUM DOCKER INTEGRATION
          */
 
-
         //Desired Capabilites class called to create Object
         DesiredCapabilities cap = new DesiredCapabilities();
         // set capabilities with cap variable from desired capabilities class to use chrome
