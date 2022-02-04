@@ -1,17 +1,21 @@
+package Tests;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class chromeTest1 {
+public class chromeTest2 {
 
-    public static void main(String[] args) throws MalformedURLException {
+
+    @Test
+    public static void test2() throws MalformedURLException {
 
         /*
         SELENIUM DOCKER HUB INTEGRATION
          */
-
         //Desired Capabilites class called to create Object
         DesiredCapabilities cap = new DesiredCapabilities();
         // set capabilities with cap variable from desired capabilities class to use chrome
@@ -26,6 +30,7 @@ public class chromeTest1 {
         // Print out Title
         System.out.println(title);
         System.out.println("Docker Test Ended");
+
     }
 
 

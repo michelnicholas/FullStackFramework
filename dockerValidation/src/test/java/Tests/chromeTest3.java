@@ -1,12 +1,17 @@
+package Tests;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
 public class chromeTest3 {
 
-    public static void main(String[] args) throws MalformedURLException {
+
+    @Test
+    public static void test3() throws MalformedURLException {
 
         /*
         SELENIUM HUB INTEGRATION
