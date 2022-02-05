@@ -24,3 +24,6 @@
 - docker-compose up --scale chrome=5 || firefox=5 
 
 ^^ Use above to create multiple browsers you can scale up 
+
+- docker-compose -f docker-compose.yaml up >>output.txt
+^^ create text file with logs instead of creating logs in server/cmd prompt
