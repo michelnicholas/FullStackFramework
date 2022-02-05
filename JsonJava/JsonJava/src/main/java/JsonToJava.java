@@ -45,7 +45,7 @@ public class JsonToJava {
             }
         for (int i = 0; i <a.size();i++){
             ObjectMapper oj = new ObjectMapper();
-            oj.writeValue(new File("C:\\Users\\Miche\\IdeaProjects\\FullStackAutomationProject\\JsonJava\\customerInfo" + i+ ".json"),a.get(i));
+            oj.writeValue(new File("C:\\Users\\Miche\\IdeaProjects\\FullStackFramework\\JsonJava\\customerInfo" + i+ ".json"),a.get(i));
         }
 
         conn.close();

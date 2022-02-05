@@ -52,7 +52,7 @@ public class oneSingleJson {
         }
         for (int i = 0; i <a.size();i++){
             ObjectMapper oj = new ObjectMapper();
-            oj.writeValue(new File("C:\\Users\\Miche\\IdeaProjects\\FullStackAutomationProject\\JsonJava\\customerInfo" + i+ ".json"),a.get(i));
+            oj.writeValue(new File("C:\\Users\\Miche\\IdeaProjects\\FullStackFramework\\JsonJava\\customerInfo" + i+ ".json"),a.get(i));
             Gson g = new Gson();
             String jsonString = g.toJson(a.get(i));
             js.add(jsonString);
