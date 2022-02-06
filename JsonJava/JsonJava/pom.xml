@@ -11,6 +11,8 @@
     <modules>
         <module>dockerValidation</module>
         <module>JsonJava</module>
+        <module>JsonJava</module>
+        <module>1</module>
     </modules>
 
     <properties>
